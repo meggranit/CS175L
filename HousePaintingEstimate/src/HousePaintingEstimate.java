@@ -3,6 +3,8 @@ public class HousePaintingEstimate {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
+		
+		//input dimensions
 		System.out.println("Enter the length of the base of the house:");
 		int length = in.nextInt();
 		System.out.println("Enter the height to the edge of the roof:");
@@ -23,6 +25,9 @@ public class HousePaintingEstimate {
 		int widthDoors = in.nextInt();
 		System.out.println("Enter the cost the painter charges per square foot:");
 		double rate = in.nextDouble();
+		
+		
+		//computations
 		double normalArea= length*width;
 		//System.out.println(normalArea);
 		double roofArea=((height-width)*length)*1/2;
@@ -35,6 +40,9 @@ public class HousePaintingEstimate {
 		double totalSurfaceArea= (2*peakArea)+(2*normalArea)-areaTotalWindows-areaTotalDoors;
 		//System.out.println(totalSurfaceArea);
 		double totalCost= rate*totalSurfaceArea;
+		
+		
+		//final output
 		System.out.println("The total cost to paint the house is $"+totalCost);
 		
 		
