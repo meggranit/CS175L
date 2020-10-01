@@ -7,6 +7,7 @@ public class BankAccount
 {
 private double balance;
 
+
 /**
    Constructs a bank account with zero balance.
 */
