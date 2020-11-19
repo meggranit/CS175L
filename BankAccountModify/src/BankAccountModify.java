@@ -15,8 +15,8 @@ public void BankAccount(double amount, double interest)
 {
    balance = amount;
    interestPct= interest;
-   System.out.println("Your initial balance is "+balance);
-   System.out.println("The interest percentage is " + interestPct);
+   //System.out.println("Your balance is "+balance);
+   //System.out.println("The interest percentage is " + interestPct);
    
    
 }
@@ -64,7 +64,7 @@ public double calcInterest() {
 */
 public double getBalance()
 {
-   return (balance-(balance*interestPct));
+   return (balance+(balance*interestPct));
 }
 }
 
